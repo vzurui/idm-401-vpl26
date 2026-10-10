@@ -2,6 +2,23 @@
    BRAND SETTINGS: edit only this block to rebrand
    (swatch hex labels in the Palette tile update automatically)
    ===================================================== */
+
+@font-face {
+  font-family: 'Jakarta-Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/Jakarta-Sans/PlusJakartaSans-Medium.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Syne/Syne-Regular.ttf')
+    format('truetype');
+}
+
 :root{
   /* Your 4-color palette: dark, two accents, light */
   --brand-1:#1E1E1E;  /* dark / primary (Identity tile background) */
@@ -17,10 +34,10 @@
   --line:#E4DED4;     /* borders */
   --on-brand:#F4EFE6; /* text on the Identity tile */
 
-  /* Type */
-  --serif:'Playfair Display',Georgia,serif;   /* name, type sample */
-  --sans:'DM Sans',system-ui,sans-serif;      /* body */
-  --mono:'Space Mono',ui-monospace,monospace; /* small labels */
+	/* Type */
+--header-sans: 'Syne', sans-serif;
+--body-sans: 'Jakarta-Sans', sans-serif;
+--mono: 'Jakarta-Sans', sans-serif;
 
   --radius:12px;
 }
@@ -30,7 +47,7 @@
    ===================================================== */
 *{box-sizing:border-box;margin:0;padding:0}
 html{font-size:18px}
-body{font-family:var(--sans);background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;min-height:100vh}
+body{font-family:var(--body-sans);background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;min-height:100vh}
 .page{max-width:1200px;margin:0 auto;padding:3rem 6vw 4rem}
 .eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-2);margin-bottom:1rem}
 .mono{font-family:var(--mono)}
@@ -47,7 +64,7 @@ body{font-family:var(--sans);background:var(--paper);color:var(--ink);-webkit-fo
 /* Identity tile */
 .bb.id{grid-column:span 2;grid-row:span 2;background:var(--brand-1);color:var(--on-brand);display:flex;flex-direction:column;justify-content:space-between;border:0}
 .bb.id .lbl{color:var(--on-brand);opacity:.7}
-.bb.id .nm{font-family:var(--serif);font-size:1.9rem;font-weight:800;line-height:1.05}
+.bb.id .nm{font-family:var(--header-sans);font-size:1.9rem;font-weight:800;line-height:1.05}
 .bb.id .tl{font-size:.95rem;opacity:.85}
 .bb.id .url{font-size:.7rem;opacity:.7}
 
@@ -58,7 +75,7 @@ body{font-family:var(--sans);background:var(--paper);color:var(--ink);-webkit-fo
 .sw .s1{background:var(--brand-1)}.sw .s2{background:var(--brand-2)}.sw .s3{background:var(--brand-3)}.sw .s4{background:var(--brand-4)}
 
 /* Type sample */
-.type-sample{font-family:var(--serif);font-weight:800;font-size:1.3rem}
+.type-sample{font-family:var(--header-sans);font-weight:800;font-size:1.3rem}
 
 /* Imagery / mood tiles: gradients built from your palette
    (replace with <img> tags or background-image: url(...) for real photos) */
@@ -72,8 +89,17 @@ a {
 	color: var(--paper);
 }
 
+a:hover {
+	color: var(--brand-3);
+
+}
+
 a:visited {
 	color: var(--paper);
+}
+
+#social-links a:visited {
+	color: var(--ink);
 }
 
 /* Responsive */
