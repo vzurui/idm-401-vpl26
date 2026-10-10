@@ -62,7 +62,10 @@ html {
 
 body {
   font-family: var(--body-sans);
-  background: var(--paper);
+  /* background: var(--ink); */
+	background-image: url(../pattern-bg.png);
+	background-repeat: repeat;
+	background-size: cover;
   color: var(--ink);
   min-height: 100vh;
 }
