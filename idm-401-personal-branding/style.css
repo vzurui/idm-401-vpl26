@@ -4,10 +4,10 @@
    ===================================================== */
 :root{
   /* Your 4-color palette: dark, two accents, light */
-  --brand-1:#20263A;  /* dark / primary (Identity tile background) */
-  --brand-2:#E8742A;  /* accent 1 */
-  --brand-3:#2E9E6B;  /* accent 2 */
-  --brand-4:#F4EFE6;  /* light / neutral */
+  --brand-1:#1E1E1E;  /* dark / primary (Identity tile background) */
+  --brand-2:#BB8487;  /* accent 1 */
+  --brand-3:#CBD5AE;  /* accent 2 */
+  --brand-4:#F0EAD3;  /* light / neutral */
 
   /* Page + tiles */
   --paper:#FAF7F2;    /* page background */
