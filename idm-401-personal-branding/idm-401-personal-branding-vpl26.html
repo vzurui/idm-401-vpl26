@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Board</title>
+
+<link rel="stylesheet" href="style.css">  
+
+<!-- FONTS: swap families here, then update --serif / --sans / --mono in brand-board.css -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="brand-board.css">
+</head>
+<body>
+<main class="page">
+  <div class="eyebrow">Brand Board · Vy Le</div>
+
+  <div class="board">
+    <!-- Identity (2x2) -->
+    <div class="bb id">
+      <div class="lbl">Identity</div>
+      <div>
+        <div class="nm">Vy Le</div>
+        <div class="tl">Your title · your specialty or focus area</div>
+      </div>
+      <a href="https://heyvee.framer.website/" target="blank">heyvee.framer</a>
+    </div>
+
+    <!-- UVP -->
+    <div class="bb wide"><div class="lbl">UVP</div>I help [target audience] [solve a specific problem] by [your unique strength or approach].</div>
+
+    <div class="bb"><div class="lbl">Target audience</div>Who hires or works with you.</div>
+    <div class="bb"><div class="lbl">Values</div>Value one · Value two · Value three</div>
+    <div class="bb"><div class="lbl">Challenges</div>Obstacles you may face.</div>
+    <div class="bb"><div class="lbl">Opportunities</div>Openings you can use.</div>
+
+    <!-- Palette: swatches use --brand-1..4; hex labels are filled in by the script below -->
+    <div class="bb wide"><div class="lbl">Palette</div>
+      <div class="sw"><span class="s1"><small></small></span><span class="s2"><small></small></span><span class="s3"><small></small></span><span class="s4"><small></small></span></div>
+    </div>
+
+    <div class="bb"><div class="lbl">Type</div><span class="type-sample">Heading font</span><br><span>Body font for text</span></div>
+    <div class="bb"><div class="lbl">Imagery / mood</div><div class="mood"><i class="m1"></i><i class="m2"></i><i class="m3"></i></div></div>
+    <div class="bb"><div class="lbl">Voice</div>Adjective · Adjective · Adjective</div>
+    <div class="bb wide"><div class="lbl">Metrics &amp; goals</div>Goal one · Goal two · Goal three · Goal four</div>
+    <div class="bb"><div class="lbl">Channels</div>Portfolio · LinkedIn · Other</div>
+  </div>
+</main>
+
+<!-- <script>
+// Fill each swatch label with its actual color, so you only edit the :root block above.
+document.querySelectorAll('.sw span').forEach(function(sp){
+  var m=getComputedStyle(sp).backgroundColor.match(/\d+/g);
+  if(!m) return;
+  var hex='#'+m.slice(0,3).map(function(n){return (+n).toString(16).padStart(2,'0')}).join('').toUpperCase();
+  sp.querySelector('small').textContent=hex;
+});
+</script> -->
+</body>
+</html>
