@@ -114,41 +114,8 @@ h2 {
   margin: 1.8rem 0 .8rem;
 }
 
-.entry { 
-	margin-bottom: 1.1rem; 
-	font-size: .85rem;
-}
-
-.row { 
-	display: flex; 
-	justify-content: space-between; 
-	align-items: baseline; 
-	gap: 1rem; 
-}
-
-.row .l { 
-	font-weight: 600; 
-}
-
-.row .r { 
-	color: var(--ink-2); 
-	font-size: .8rem; 
-	text-align: right; 
-}
-
-.entry h3 { 
-	font-family: var(body-sans); 
-	font-weight: 700; font-size: 1rem; 
-	line-height: 1.25; 
-}
-
-.row.sub { 
-	color: var(--ink-2); 
-	font-size: .8rem; 
-}
-
-.row.sub .l { 
-	font-weight: 500; 
+p {
+	margin-bottom: 1rem;
 }
 
 ul { 
