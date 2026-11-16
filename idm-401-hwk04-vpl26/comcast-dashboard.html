@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vy Le - Case Studies Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP NAV: all 3 case studies. Update hrefs to match your file names. -->
+<nav class="case-nav" aria-label="Case studies">
+  <a class="brand">Vy Le</a>
+  <ul>
+    <li><a class="case" href="kims-dragon.html">Kim’s Dragon</a></li>
+    <li><a class="case" href="lennox-got-lunch.html">Lennox Got Lunch</a></li>
+    <li><a class="case" href="comcast-dashboard.html" aria-current="page">ComcastNow</a></li>
+  </ul>
+</nav>
+
+
+<main class="page">
+
+ <!-- Header Section -->
+ <header class="header">
+	<div class="header-content">
+			<img class="hero-img" src="https://framerusercontent.com/images/CJfz25pm9xCkl129zFtdltivg8.png?width=1200&height=800" alt="ComcastNow Dashboard case study header">
+	</div>
+</header>
+
+<!-- Main Content -->
+<main class="content">
+	
+	<!-- Sidebar Navigation -->
+	<aside class="sidebar">
+			<nav>
+					<ul>
+							<li><a href="#introduction">Overview</a></li>
+							<li><a href="#challenge">The Challenge</a></li>
+							<li><a href="#design">Design &#38; Refinement</a></li>
+							<li><a href="#testing">Testing &#38; Developer Collaboration</a></li>
+							<li><a href="#outcome">Outcome</a></li>
+							<li><a href="#conclusion">Reflection</a></li>
+					</ul>
+			</nav>
+	</aside>
+
+	<!-- Case Study Sections -->
+	<section class="case-study">
+			
+			<article id="introduction">
+					<h2>Overview</h2>
+
+					<p class="proj-tools"><strong>Skills:</strong> UX Design, UX Research<br>
+					<strong>Timeline:</strong> 6 months</p>
+
+					<h3>Bringing everyday resources into one place.</h3>
+
+					<p>During my six-month co-op on Comcast’s Digital Internal Communications team, I helped test and refine a personalized employee dashboard designed to bring frequently used tools and resources into one place.</p>
+
+					<p>ComcastNow is an internal platform that connects <strong>more than 80,000 employees</strong> across Comcast with company news, tools, and resources. The dashboard refresh aimed to bring everyday information and actions into one personalized space, making it easier to check PTO, find the next pay date, and open frequently used apps.</p>
+
+					<p>Working between design and development, I explored edge cases, wrote user stories, tested employee and editor workflows, and collaborated with developers to resolve usability issues before launch.</p>
+
+					IMAGE: screenshot of the refreshed dashboard features (SharePoint or Figma)
+
+					<h3>The project at a glance...</h3>
+					<div class="stats">
+						<div class="stat"><span class="stat-num">80,000+</span><p>Employees across Comcast</p></div>
+						<div class="stat"><span class="stat-num">120+</span><p>Defects I documented</p></div>
+						<div class="stat"><span class="stat-num">~90–100</span><p>Issues designated must-fix for launch</p></div>
+					</div>
+			</article>
+
+			<article id="challenge">
+					<h2>The Challenge</h2>
+
+					<h3>Important information lived in too many places.</h3>
+
+					<p>The original “My Resources” page provided employee information through three cards: My PTO, My Tasks, and My HR. Meanwhile, frequently used applications lived separately under Tools &#38; Apps.</p>
+
+					<p>Although these resources were available, employees had to navigate between different areas of ComcastNow to find what they needed. The My Resources page also saw limited use.</p>
+
+					IMAGE: the existing "My Resources" page, then the Tools & Apps area to show the fragmentation
+
+					<p>The refresh focused on two goals:</p>
+
+					<ul>
+						<li><strong>Make essentials easier to find.</strong> Bring everyday information like PTO balances, pay dates, and HR resources into a single, scannable dashboard.</li>
+						<li><strong>Support individual workflows.</strong> Give employees more control over their quick actions, applications, and saved links based on how they work.</li>
+					</ul>
+			</article>
+
+			<article id="design">
+					<h2>Design &#38; Refinement</h2>
+
+
+					<h3>A more personalized starting point</h3>
+					<p>The design team organized the refreshed dashboard around four main features:</p>
+
+					<div class="card-grid">
+						<div class="card"><span class="card-num">01</span><h4>Dashboard Cards</h4><p>Display essential employee information, including PTO balances, pay dates, Xchange points, HR resources, and promotions.</p></div>
+						<div class="card"><span class="card-num">02</span><h4>Quick Actions &#38; Apps</h4><p>Allow employees to select up to 10 frequently used applications and actions for their homepage.</p></div>
+						<div class="card"><span class="card-num">03</span><h4>Saved Links</h4><p>Give employees a place to add, edit, and organize useful links into folders.</p></div>
+						<div class="card"><span class="card-num">04</span><h4>Personalized Header</h4><p>Greet employees by name and provide quick access to Comcast’s AI assistant.</p></div>
+					</div>
+
+					IMAGE: annotated refreshed dashboard showing all four features
+
+					<h3>Looking beyond the intended experience</h3>
+					<p>Beyond the main features, I worked with designers and developers to address smaller interaction gaps that could disrupt everyday tasks:</p>
+
+					<div class="card-grid">
+						<div class="card"><h4>Recognizing tools</h4><p>Revealing full application names on hover when labels were truncated.</p></div>
+						<div class="card"><h4>Clarifying navigation</h4><p>Distinguishing internal and external links through consistent indicators.</p></div>
+						<div class="card"><h4>Managing saved resources</h4><p>Bringing newly created folders into view so employees could immediately locate them.</p></div>
+					</div>
+			</article>
+
+			<article id="testing">
+					<h2>Testing &#38; Developer Collaboration</h2>
+
+					<h3>When saving doesn’t feel like saving</h3>
+
+					<p>The dashboard design can look complete in Figma, but that doesn’t mean every interaction works as intended. I focused on testing employee-facing features and editor workflows, comparing development builds against Figma and exploring edge cases across personalization, navigation, and content management.</p>
+
+					<h3>The problem</h3>
+					<p>One issue I encountered involved the Quick Actions &#38; Apps customization experience.</p>
+
+					<p>Employees could select and organize their preferred applications in a modal, but after clicking <strong>Save</strong>, their updated changes wouldn’t appear on the dashboard until they manually refreshed the page.</p>
+
+					<p>Although the changes were being saved, the interface provided no clear indication that the action had succeeded.</p>
+
+					<p>For a dashboard built around personalization, this created an important usability gap: <strong>employees had control over their preferences but couldn’t immediately tell whether their changes worked.</strong></p>
+
+					<img src="images/flow-original.svg" alt="Original interaction flow: Edit preferences, Save, No visible update, Manual refresh">
+					<h3>Turning a defect into a design improvement</h3>
+					<p>After identifying the issue, I worked with my team to revisit the interaction and define what employees should experience after saving.</p>
+
+					<p>We focused on three improvements:</p>
+
+					<ul>
+						<li><strong>Immediate updates:</strong> Reflect saved preferences on the dashboard without requiring a manual refresh.</li>
+						<li><strong>Success feedback:</strong> Clearly communicate when changes have been saved.</li>
+						<li><strong>Error feedback:</strong> Let employees know when something goes wrong instead of leaving them guessing.</li>
+					</ul>
+
+					<p>These decisions were then handed off to developers and discussed in team meetings to align the intended experience with implementation.</p>
+
+					<p>What began as a functional defect revealed something missing from the design itself: <strong>personalization needs clear feedback to feel reliable.</strong></p>
+
+					IMAGE: new proposed interaction flow: Edit preferences → Save → visible update, no manual refresh
+
+					<h3>Beyond customization</h3>
+					<p>Similar issues appeared in other parts of the dashboard, raising concerns about the reliability of employee information.</p>
+
+					<div class="card-grid">
+						<div class="card"><h4>Personalized Header</h4><p>The greeting sometimes displayed only an employee’s last name instead of their intended personalized greeting.</p></div>
+						<div class="card"><h4>PTO Card</h4><p>Employee PTO information occasionally appeared incorrectly or failed to render.</p></div>
+					</div>
+
+					<p>Together, these issues raised a larger question: <strong>Can employees trust the dashboard to accurately reflect their actions and information?</strong></p>
+			</article>
+
+			<article id="outcome">
+					<h2>Outcome</h2>
+
+					<h3>A more connected employee experience.</h3>
+
+					<p>The refreshed dashboard brought frequently used employee resources into one centralized, customizable experience.</p>
+
+					<p>Instead of navigating between separate areas for employee information and applications, employees could access essential resources, personalize their quick actions, and organize saved links from a single starting point.</p>
+
+					<p>My work helped bridge the gap between the intended design and the experience being built. By identifying usability issues, helping define missing interactions, and collaborating with developers, I contributed to improving the dashboard’s reliability and preparing it for launch.</p>
+
+					<p>Across testing, I documented <strong>120+ defects</strong>, with approximately <strong>90–100 designated by the team as must-fix before launch</strong>.</p>
+
+					IMAGE: final dashboard screenshot, or a simplified before-and-after comparison
+			</article>
+
+			<article id="conclusion">
+					<h2>Reflection</h2>
+
+					<h3>Testing can reveal what’s missing from the design</h3>
+					<p>I initially approached testing as a way to check whether the product matched its designs. But as I uncovered missing feedback states and incomplete interactions, I realized testing could also reveal design decisions that hadn’t been fully considered.</p>
+
+					<p>It changed how I approached usability: I started questioning not only whether something worked as intended, but whether the intended experience was complete.</p>
+
+					<h3>Shipping a product means making tradeoffs</h3>
+					<p>Documenting over 120 defects showed me that identifying problems is only part of the process. Not every issue carries the same consequences, and not every improvement can happen before launch.</p>
+
+					<p>Discussing issue priorities and expected behavior of the final design helped me better understand how usability, technical constraints, and deadlines influence real product decisions.</p>
+			</article>
+
+	</section>
+
+
+</main>
+</main>
+</body>
+</html>
