@@ -162,7 +162,7 @@ img {
 
 /* Header */
 .header {
-		background: var(--brand-1);
+		/* background: var(--brand-1); */
 		color: white;
 		text-align: center;
 }
@@ -177,10 +177,18 @@ img {
 	margin-top: 10px;
 }
 
+
 .hero-img {
-	margin: 0;
-	display: block;
+  display: block;
+  width: 55%;
+  max-width: 1000px;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+	margin: 3rem auto;
+  border-radius: 8px;
 }
+
 
 /* Main Layout */
 .content {
