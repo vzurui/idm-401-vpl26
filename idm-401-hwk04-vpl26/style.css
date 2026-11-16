@@ -3,7 +3,14 @@
   font-family: 'Jakarta-Sans';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/Jakarta-Sans/PlusJakartaSans-Medium.ttf') format('truetype');
+  src: url('../fonts/Jakarta-Sans/PlusJakartaSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Jakarta-Sans-Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Jakarta-Sans/PlusJakartaSans-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -24,7 +31,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: var(--body-sans);
 }
 
 :root {
@@ -40,7 +46,10 @@
 	--accent-text: #8E5559;
 
 	--header-sans: 'Syne', 'Helvetica Neue', Arial, sans-serif;
-	--body-sans: 'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
+	--header-sans-bold: 'Syne-Bold', 'Helvetica Neue', Arial, sans-serif;
+	--body-sans: 'Jakarta-Sans', 'Helvetica Neue', Arial, sans-serif;
+	--body-sans-bold: 'Jakarta-Sans-Bold', 'Helvetica Neue', Arial, sans-serif;
+	
 }
 
 html {
@@ -55,6 +64,7 @@ body {
 
 p {
 	margin: 1em 0;
+	font-family: var(--body-sans);
 }
 
 h2,
@@ -89,7 +99,7 @@ img {
 
 .case-nav .brand {
 	color: var(--ink);
-	font-family: var(--header-sans);
+	font-family: var(--header-sans-bold);
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-decoration: none;
@@ -107,6 +117,7 @@ img {
 	display: block;
 	padding: 8px 18px;
 	border-radius: 999px;
+	font-family: var(--body-sans-bold);
 	border: 2px solid transparent;
 	color: var(--ink);
 	font-size: 0.95rem;
@@ -191,6 +202,7 @@ img {
 	font-weight: bold;
 	transition: 0.3s;
 	font-size: 18px;
+	font-family: var(--body-sans-bold);
 }
 
 .sidebar nav ul li a:hover {
@@ -230,6 +242,11 @@ img {
 	font-size: 1.1rem;
 	line-height: 1.6;
 	margin-bottom: 0.6em;
+}
+
+.proj-tools {
+	font-family: var(--body-sans-bold);
+	font-weight: 800;
 }
 
 /* Buttons */
@@ -295,3 +312,4 @@ img {
 			display: none;
 	}
 }
+
